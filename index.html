@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+    <!--CONTENEDOR PRINCIPAL-->
+    <main class="contenedor">
+        <!--SECCION DE LA IMAGEN-->
+        <section class="imagen">
+            <div class="odin">
+                <img src="./imagenes/odin-lined.png" alt="Logotipo odin">
+                <h1>ODIN</h1>
+            </div>
+            <img src="./imagenes/yoksel-zok-NLdWtBIuto0-unsplash.jpg" alt="Imagen de una Planta">
+            <div class="atribucion">
+                <h6>
+                    Photo by 
+                    <a href="https://unsplash.com/es/fotos/plantas-de-hoja-verde-NLdWtBIuto0">Yoksel 🌿 Zok</a>
+                     on <a href="https://unsplash.com/es">Unsplash</a>
+                </h6>
+            </div>
+        </section>
+
+        <!-- SECCION DE INFORMACION-->
+        <section class="contenido">
+            <article class="informacion">
+                <P>
+                    This is not a real online service! You know you need something 
+                    like this in your life to help you realize your deepest dreams.
+                    Sign up <em>now</em> to get started.
+                </P>
+                <p>
+                    You <em>know</em> you want to.
+                </p>
+            </article>
+            <article class="formulario">
+                <p>
+                    Let's do this!
+                </p>
+
+                <!--FORMULARIO-->
+                <form id="Cuenta" method="post">
+                    <div class="Subcontenedor_1">
+                        <label for="Nombre">FIRST NAME</label>
+                        <input type="text" id="Nombre" name="Nombre" required/>
+                        <label for="Correo">EMAIL</label>
+                        <input type="email" id="Correo" name="Correo" required/>
+                        <label for="Contrasena">PASSWORD</label>
+                        <input type="password" id="Contrasena" name="Contrasena" required pattern="\d{8}" title="La contraseña debe tener solo 8 caracteres"/>
+                    </div>
+                    <div class="Subcontenedor_2">
+                        <label for="Apellido">LAST NAME</label>
+                        <input type="text" id="Apellido" name="Apellido" required/>
+                        <label for="Correo">PHONE NUMBER</label>
+                        <input type="text" id="telefono" name="Telefono" required/>
+                        <label for="confirmacion">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirmacion" name="Confirmacion" pattern="\d{8}" title="La contraseña debe tener solo 8 caracteres"/>
+                    </div>
+                </form>
+            </article>
+            <!--BOTON Y ENLACE-->
+            <input id="enviar" type="submit" form="Cuenta" value="Create Account">
+            <h5 class="enlace"> Already have an account? <a href="#">Log In</a></h5>
+        </section>
+    </main>
+</body>
+</html>
